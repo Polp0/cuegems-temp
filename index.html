@@ -2,14 +2,18 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Cue Gems</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>Pagina Temporanea</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
   <style>
+    /* 2. BLOCCO SCROLL */
     html, body {
       height: 100%;
       width: 100%;
-      overflow: hidden;
+      overflow: hidden; 
       margin: 0;
       padding: 0;
     }
@@ -19,18 +23,23 @@
       justify-content: center;
       align-items: center;
       background-color: #111;
+      
+      /* 3. BLOCCO ZOOM E PAN (TOUCH) */
+      touch-action: none; 
     }
 
+    /* 4. IMMAGINE RESPONSIVE */
     img {
       width: 30vw;
-      height: auto;
+      height: auto; 
       max-width: 200px;
-
       max-height: 80vh;
     }
   </style>
 </head>
 <body>
-  <img src="favicon.svg" alt="Gem">
+
+  <img src="favicon.svg?v=1.1" alt="Logo" ondragstart="return false;">
+
 </body>
 </html>
